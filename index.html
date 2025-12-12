@@ -1,10 +1,19 @@
-<p>Bonjour</p>
+<!DOCTYPE html>
 
-<script type="module">
-    const start = performance.now();
-    const res = await fetch("https://rmbi.ch/vital/api/proxy.php/");
-    const data = await res.json();
-    const end = performance.now();
-    const ping = (end - start).toFixed(2);
-    console.log(`${data.message} (Ping: ${ping} ms)`);
-</script>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <link rel="icon" type="image/svg+xml" href="./img/icon.svg">
+    
+    <link rel="stylesheet" href="./css/style.css"/>
+
+    <script defer src="./js/script.js" type="module"></script>
+    <title>Page web</title>
+  </head>
+
+  <body>
+    <p class="title">test</p>
+  </body>
+</html>

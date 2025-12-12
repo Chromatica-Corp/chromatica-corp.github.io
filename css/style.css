@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Txt';
+    src: url('../fonts/fontBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+:root {
+    --color1: #41403d;
+    --color2: #b0b0b0;
+}
+
+body {
+    font-family: 'Txt', serif;
+    background: var(--color1);
+    color: var(--color2);
+}
+
+.title {
+    font-size: 3em;
+    text-align: center;
+}
