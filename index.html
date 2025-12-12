@@ -1,1 +1,9 @@
 <p>Bonjour</p>
+<script>
+  const start = performance.now();
+  const res = await fetch(`https://rmbi.ch/vital/api/proxy.php/`);
+  const end = performance.now();
+  const ping = (end - start).toFixed(2);
+  const data = await res.json();
+  console.log(`${data.message} (Ping: ${ping} ms)`);
+</script>
